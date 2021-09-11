@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = 'login.css' rel = 'stylesheet'>
+    <link rel = "shortcut icon" href="icons8-key-24.png">
+    <title>Log in</title>
+</head>
+<body>
+    <header>
+        <div><a href = 'index.html'style= text-decoration:none>
+            <h1>Starcraft</h1></a>
+        </div>
+        <div id='title'><a href = 'https://starcraft.fandom.com/wiki/' target="_blank" >
+            <img src='starcraft_logo.png' ></a>
+        </div>
+    </header>
+        <section class = 'login-form'>
+            <h1>LOG IN</h1>
+            <form action=''>
+                <div class = 'int-area'>
+                    <input type = 'text' name = 'id' 
+                    id= 'id' autocomplete = 'off' required>
+                    <label for = 'id'>USER ID</label>
+                </div>
+                <div class = 'int-area'>
+                    <input type = 'password' name = 'pw' 
+                    id= 'pw' autocomplete = 'off' required>
+                    <label for = 'pw'>PASSWORD</label>
+                </div>
+                <div class = "btn-area">
+                    <button type = 'submit' id='submit'>LOGIN</button>
+                </div>
+            </form>
+            <div class = 'caption'>
+                <a href=''><p onclick="alert('ID =1234'+'\n'+'PW = 1234')">Forgot Password?</p></a>
+            </div>
+        </section>
+    <script src='login.js'></script>
+</body>
+</html>

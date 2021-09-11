@@ -1,0 +1,86 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('Zerg1high.bmp');
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size : cover;
+    
+}
+.wrap{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:white;
+}
+header{
+width: auto;
+margin-right: auto;
+margin-left: auto;
+background-color:transparent;
+padding: 10px ;
+overflow: hidden;
+text-decoration: none;
+}
+header h1{
+width:auto;
+margin-bottom: 0px;
+padding-top: 10px;
+
+font-size: 3em;
+color:#ffffff;
+}
+header nav {
+width:auto;
+float:right;	
+margin-top:15px;
+}
+nav ul{
+list-style-type:none;	
+}
+nav ul li{
+display: inline;
+float: left;
+margin: 10px;
+color:rgb(255, 255, 255);
+font-family: 'Courier New', Courier, monospace;
+}
+li a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'neon';
+    src: url('Starcraft\ Normal.ttf') format('truetype');
+}
+#Title{
+    font-family : 'neon';
+}
+.lg-text{
+    font-size: 2rem;
+    font-weight: bold;
+    color:yellow;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.sm-text{
+    font-size:1.5rem;
+    color:rgb(238, 16, 201);
+}
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+@media (max-width: 800px) {
+    .lg-text, .sm-text{
+        width: 400px;
+        font-size: 130%;
+    }
+    
+}

@@ -1,0 +1,224 @@
+/* 백그라운드 */
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+    align-items: center;
+}
+body{
+    background-image: url('Zerg1high.bmp');
+    background-repeat: no-repeat;
+    background-size : cover;
+}
+
+/* 그리드 */
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 0.9fr 0.4fr;
+    grid-template-areas: 
+    'header header header'
+    'main main main'
+    'content1 content2 content3'
+    'footer footer footer';
+}
+header{ 
+    grid-area: header;
+}
+main{
+    margin-top: 40px;
+    grid-area: main;
+    text-align:center;
+}
+#content1{
+    grid-area: content1;
+}
+#content2{
+    grid-area:content2;
+}
+#content3{
+    grid-area: content3;
+}
+
+/* header */
+header{
+    display:flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding: 10px ;
+    overflow: hidden;
+    text-decoration: none;
+    }
+@font-face {
+    font-family: 'neon';
+    src: url('Starcraft\ Normal.ttf') format('truetype');
+}
+header nav {
+    margin-right:auto;
+    width:auto;
+    float:right;	
+    margin-top:35px;
+    }
+nav ul{ list-style-type:none;}
+nav ul li{
+    display: inline;
+    float: left;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+    }
+nav ul li a:-webkit-any-link {
+        color: rgb(250, 223, 189);
+        cursor: pointer;
+        text-decoration: none;
+    }
+header nav ul li a:hover{
+    color:rgb(157, 80, 230)
+}
+h1{
+    font-family : 'neon';
+    width:auto;
+    margin-left:0;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 3em;
+    color:#ffffff;
+}
+
+
+/* 메인 */
+a{
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.lg-text{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* content 사진 */
+.tribe{
+    font-family: 'welcome';
+    font-weight: bold;
+    font-size:15px;
+    text-align: center;
+    color:white;
+}
+.tribe img{
+    display: block;
+    margin:0 auto;
+    margin-top: 50px;
+    height: 150px;
+}
+#content2>a>img{
+    width: 155px;
+    height: 155px;
+}
+.tribe a:-webkit-any-link {
+    color: rgb(243, 236, 227);
+    cursor: pointer;
+    text-decoration: none;
+}
+.tribe a:hover{
+    color:rgb(157, 80, 230)
+}
+
+
+/* footer */
+
+footer{
+    grid-area: footer;
+    display: inline-flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+footer>img{
+    height:70px;
+    margin: 0 auto;
+    margin-top:20px;
+    margin-right: 10px;
+}
+footer > ul > li{
+    width: auto;
+    float:left;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    margin-top:50px;
+    margin-left: 30px;
+    color:rgb(250, 236, 218);
+    font-family: 'Courier New', Courier, monospace;
+}
+footer ul li a:-webkit-any-link {
+    color: rgb(243, 236, 227);
+    cursor: pointer;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color:rgb(157, 80, 230)
+}
+
+
+/* 반응형 웹페이지 */
+@media (max-width:700px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.4fr;
+        grid-template-areas: 
+        'header'
+        'main'
+        'content1 content2 content3'
+        'footer';
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    header{
+        display:block;
+    }
+    header nav ul li{
+        margin-top: 10px
+    }
+    #logo{
+        width: 350px;
+    }
+    main{
+        margin-top: 60px;
+    }
+    .lg-text{
+        font-size: 1.2rem;
+    }
+    .tribe{
+        margin-top:10px;
+        font-size: smaller;
+    }
+    .tribe img{
+        margin-top:100px;
+        display: block;
+        margin:0 auto;
+        height:100px;
+    }
+    #content2>a>img{
+        width: 100px;
+        height: 100px;
+    }
+    footer > ul > li{
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 15px;
+        margin-left: 9px;
+    }
+
+}
